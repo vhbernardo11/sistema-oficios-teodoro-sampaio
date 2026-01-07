@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm run build:client && npm run build:server",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "env": {
+    "VITE_API_URL": "@VITE_API_URL",
+    "VITE_SUPABASE_URL": "@VITE_SUPABASE_URL",
+    "VITE_SUPABASE_ANON_KEY": "@VITE_SUPABASE_ANON_KEY"
+  }
+}
