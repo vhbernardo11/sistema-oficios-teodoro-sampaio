@@ -1026,7 +1026,7 @@ Escolha um arquivo .docx correto para este número.`;
       toast("success","Pronto","Sistema carregado. Registre e importe seus ofícios.");
     }
 
-    init();
+     document.addEventListener('DOMContentLoaded', () => { setTimeout(init, 100); });
   </script>
 </body>
 </html>
