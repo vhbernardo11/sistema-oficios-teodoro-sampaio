@@ -285,8 +285,7 @@
       <div class="statusbar">
         <div class="pill" title="Status de conexão do navegador">
           <span class="dot" id="netDot"></span>
-          <span id="netText">Verificando conexão…</span>
-        </div>
+ <span id="netText">Online</span>        </div>
         <div class="pill" title="Armazenamento local do navegador (localStorage + IndexedDB)">
           <span>Armazenamento: <strong id="storageText">OK</strong></span>
         </div>
@@ -994,6 +993,7 @@ Escolha um arquivo .docx correto para este número.`;
     // Init
     // ----------------------------
     function init(){
+          updateNetworkUI();
       document.getElementById("storageText").textContent = supportsStorage() ? "OK" : "Limitado";
       document.getElementById("yearInput").value = getYearDefault();
 
